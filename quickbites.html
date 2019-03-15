@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title> Lil Mamma's Bakery </title>
+  <link rel="stylesheet" href="bakery.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="drinks.html">Drinks</a></li>
+      <li><a href="#">Quick Bites</a></li>
+      <li><a href="desserts.html">Desserts</a></li>
+      <li style="float: right;"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav> 
+
+  <div class="b1">
+    <p>French Fries<span class="price">170</span><br />
+    <small>Hot crispy potato wedges and finger chips served with a creamy mayo cheese dip and chilly sauce. </small></p>
+  </div>
+
+  <div class="b2">
+    <p>Burgers<span class="price">300</span><br />
+    <small>Double decker cheese burger with a paneer/chicken pattice and tangy sauces. Served with side potato chips. </small></p>
+  </div>
+
+  <div class="b3">
+    <p>Hot Dog <span class="price">160</span><br />
+    <small>Hot dog served with tomatoes, onions, lettuce, capsicum and olives in a thick red and mustard sauce.</small></p>
+  </div>
+
+  <div class="b4">
+    <p>Egg Omelette <span class="price">120</span><br />
+    <small>Perfectly blend and fluffy masala omelettes served with crisp butter bread taost and freshly cut tomatoes.</small></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+  <script>
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+        
+    });
+  </script>
+</body>

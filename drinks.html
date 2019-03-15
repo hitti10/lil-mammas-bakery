@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+  <title> Lil Mamma's Bakery </title>
+  <link rel="stylesheet" href="bakery.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="#">Drinks</a></li>
+      <li><a href="quickbites.html">Quick Bites</a></li>
+      <li><a href="desserts.html">Desserts</a></li>
+      <li style="float: right;"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav> 
+
+  <div class="f1">
+    <p>Hot Coffee<span class="price">125</span><br />
+    <small>A perfect blend of milk and strong coffee beans with a mouth melting creamy base and soft whipped cream and chocolate syrup. </small></p>
+  </div>
+
+  <div class="f2">
+    <p>Mint Tea<span class="price">80</span><br />
+    <small>Tea leaves straight from darjeeling flavoured with the essence of fresh mint and a dash of lemon. Served with/without milk. </small></p>
+  </div>
+
+  <div class="f3">
+    <p>Milkshakes <span class="price">150</span><br />
+    <small>Thick, cold mouth melting shakes served with fresh fruit chunks and whipped cream. Available flavours - chocolate, pineapple and mango. </small></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+  </script>
+
+</body>

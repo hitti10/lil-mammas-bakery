@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title> Lil Mamma's Bakery </title>
+  <link rel="stylesheet" href="bakery.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="drinks.html">Drinks</a></li>
+      <li><a href="quickbites.html">Quick Bites</a></li>
+      <li><a href="#">Desserts</a></li>
+      <li style="float: right;"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav> 
+
+  <div class="d1">
+    <p>Chocolate Truffle<span class="price">220</span><br />
+    <small>A soft sponge chocolate cake with a melting chocolate icing, served with whhipped cream/ice cream/fruits. </small></p>
+  </div>
+
+  <div class="d2">
+    <p>Blueberry Cheesecake <span class="price">250</span><br />
+    <small>A soft creamy mouth melting blueberry filling on a crispy biscuit base, served with freshly cut fruits and syrup.</small></p>
+  </div>
+    
+  <div class="d3">
+    <p>Mini Muffins <span class="price">175</span><br />
+    <small>Assorted cute mini muffins includes delicious different flavors of blueberry, chocochip, vanilla, cherry, mango.</small></p>
+  </div>
+
+  <div class="d4">
+    <p>Waffles <span class="price">175</span><br />
+    <small>Perfectly cooked waffles served with maple syrup/white chocolate/dark chocolate/fresh fruits/whipped cream/mix.</small></p>
+  </div>
+
+  <div class="d5">
+    <p>Pancakes <span class="price">175</span><br />
+    <small>Soft mouth melting pancakes served hot with butter, maple syrup and side cut fresh fruits (strawberry/blueberry/mango)</small></p>
+  </div>
+
+  <div class="d6">
+    <p>Macaroons <span class="price">175</span><br />
+    <small>Assorted cute mini macaroons filles with joy served in flavors of blueberry, chocochip, vanilla, cherry, mango.</small></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+  <script>
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+  </script>
+
+</body>
